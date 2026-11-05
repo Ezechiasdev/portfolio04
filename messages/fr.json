@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "title": "Ezéchias — Développeur web & mobile freelance",
+    "description": "Développeur web & mobile freelance basé au Bénin. Sites vitrines, boutiques en ligne et applications mobiles pour PME, commerçants et porteurs de projets."
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "backToTop": "Retour en haut de la page",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "mainNav": "Navigation principale",
+    "socials": "Réseaux sociaux",
+    "home": "Ezéchias, retour à l'accueil",
+    "newTab": "(s'ouvre dans un nouvel onglet)"
+  },
+  "theme": {
+    "toDark": "Passer en mode sombre",
+    "toLight": "Passer en mode clair"
+  },
+  "language": {
+    "switch": "Switch to English",
+    "short": "EN"
+  },
+  "nav": {
+    "home": "accueil",
+    "about": "à propos",
+    "expertise": "expertise",
+    "projects": "projets",
+    "experience": "expérience",
+    "contact": "contact"
+  },
+  "hero": {
+    "available": "Disponible pour de nouveaux projets",
+    "unavailable": "Agenda complet pour le moment",
+    "whatsapp": "Écrivez-moi sur WhatsApp",
+    "projects": "Voir mes projets",
+    "scroll": "Faire défiler vers la suite"
+  },
+  "about": {
+    "title": "Je suis Ezéchias",
+    "text": "Développeur freelance, je transforme les idées de mes clients en <web>sites web</web> et en <mobile>applications mobiles</mobile> rapides, beaux et faciles à utiliser. [Ton parcours en une ou deux phrases.]",
+    "text2": "[Ce qui te passionne en dehors du code, ce qui te rend unique.] Un projet en tête ? <contact>Contactez-moi</contact>.",
+    "cv": "Télécharger mon CV",
+    "photoAlt": "Photo d'Ezéchias",
+    "disc": "DISPONIBLE · OPEN TO WORK · "
+  },
+  "expertise": {
+    "title": "Mon expertise",
+    "web": {
+      "title": "Sites web",
+      "subtitle": "Next.js, React",
+      "text": "Sites vitrines et plateformes rapides, bien référencés sur Google et parfaits sur téléphone."
+    },
+    "mobile": {
+      "title": "Applications",
+      "subtitle": "Android, iOS",
+      "text": "Applications mobiles sur mesure avec [TA TECHNO MOBILE], pour vos clients ou votre équipe."
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "subtitle": "Mobile money",
+      "text": "Boutiques en ligne avec paiement par mobile money et carte bancaire."
+    }
+  },
+  "projects": {
+    "title": "Mes projets",
+    "intro": "[Une phrase sur les types de projets que tu réalises et pour qui.] {projects} projets livrés, {clients} clients satisfaits.",
+    "featured": "Projet phare",
+    "viewProject": "Voir le projet",
+    "filterBy": "Filtrer par",
+    "all": "Tous",
+    "filtersLabel": "Filtrer les projets par catégorie",
+    "empty": "Aucun projet dans cette catégorie pour le moment.",
+    "screenshotOf": "Capture du projet {title}",
+    "categories": {
+      "web": "Sites web",
+      "mobile": "Mobile",
+      "ecommerce": "E-commerce",
+      "demo": "Démos"
+    },
+    "categoryLabel": {
+      "web": "Site web",
+      "mobile": "Application mobile",
+      "ecommerce": "E-commerce",
+      "demo": "Projet démo"
+    }
+  },
+  "experience": {
+    "title": "Mon parcours"
+  },
+  "contact": {
+    "watermark": "HELLO",
+    "title": "Un projet en tête ?",
+    "titleAccent": "Parlons-en.",
+    "subtitle": "Réponse sous 24 h. Premier échange gratuit et sans engagement.",
+    "form": {
+      "name": "Votre nom",
+      "namePlaceholder": "Jean Dupont",
+      "contact": "E-mail ou WhatsApp",
+      "contactPlaceholder": "vous@exemple.com",
+      "type": "Type de projet",
+      "types": {
+        "showcase": "Site vitrine",
+        "store": "Boutique en ligne",
+        "mobile": "Application mobile",
+        "other": "Autre"
+      },
+      "message": "Votre message",
+      "messagePlaceholder": "Décrivez votre projet en quelques lignes.",
+      "honeypot": "Ne pas remplir ce champ",
+      "submit": "Envoyer le message",
+      "reachMe": "Vous pouvez me joindre sur",
+      "tapHint": "Touchez ici pour m'écrire !",
+      "sending": "Envoi en cours…",
+      "success": "Merci ! Votre message est bien parti. Je vous réponds sous 24 h.",
+      "error": "L'envoi n'a pas fonctionné. Réessayez ou écrivez-moi directement sur WhatsApp.",
+      "errors": {
+        "name": "Indiquez votre nom (2 caractères minimum).",
+        "contact": "Indiquez une adresse e-mail ou un numéro WhatsApp valide.",
+        "type": "Choisissez un type de projet.",
+        "message": "Décrivez votre projet en quelques mots (10 caractères minimum)."
+      }
+    },
+    "cards": {
+      "whatsapp": "WhatsApp — le plus rapide",
+      "email": "E-mail",
+      "location": "Localisation"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "madeWith": "// fait avec Next.js & beaucoup de café"
+  },
+  "caseStudy": {
+    "back": "Retour aux projets",
+    "client": "Client",
+    "year": "Année",
+    "category": "Catégorie",
+    "technologies": "Technologies",
+    "problem": "Le problème",
+    "solution": "La solution",
+    "result": "Le résultat",
+    "gallery": "Captures",
+    "visit": "Voir le site / l'appli",
+    "ctaTitle": "Un projet similaire ?",
+    "ctaText": "Parlons-en sur WhatsApp, le premier échange est gratuit.",
+    "next": "Projet suivant"
+  },
+  "notFound": {
+    "title": "// 404 — page introuvable",
+    "text": "Cette page n'existe pas ou a été déplacée.",
+    "back": "Retour à l'accueil"
+  }
+}

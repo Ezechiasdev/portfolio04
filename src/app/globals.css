@@ -1,26 +1,269 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Le mode sombre est piloté par la classe posée par next-themes sur <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Couleurs : mode sombre (par défaut) ---------- */
+:root,
+.dark {
+  --bg: #0b0d12;
+  --bg-elevated: #12151c;
+  --fg: #edebe6;
+  --muted: #a9a7b3;
+  --border: rgb(237 235 230 / 0.12);
+  --accent-cyan: #5ce1e6;
+  --accent-violet: #7c4dff;
+  --accent-violet-soft: #a98bff;
+  --accent-orange: #ff8a4c;
+  --grid-line: rgb(255 255 255 / 0.035);
+  --halo-cyan: rgb(92 225 230 / 0.07);
+  --halo-violet: rgb(124 77 255 / 0.06);
+  color-scheme: dark;
+}
+
+/* ---------- Couleurs : mode clair ---------- */
+.light {
+  --bg: #efede7;
+  --bg-elevated: #f7f6f2;
+  --fg: #232a4d;
+  --muted: #555b78;
+  --border: rgb(35 42 77 / 0.14);
+  /* Accents assombris pour garder un bon contraste sur fond crème */
+  --accent-cyan: #0b7c83;
+  --accent-violet: #5b2fd6;
+  --accent-violet-soft: #5b2fd6;
+  --accent-orange: #d9612a;
+  --grid-line: rgb(35 42 77 / 0.05);
+  --halo-cyan: rgb(11 124 131 / 0.06);
+  --halo-violet: rgb(91 47 214 / 0.05);
+  color-scheme: light;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--border);
+  --color-cyan: var(--accent-cyan);
+  --color-violet: var(--accent-violet);
+  --color-violet-soft: var(--accent-violet-soft);
+  --color-orange: var(--accent-orange);
+  --color-whatsapp: #25d366;
+  /* Section Expérience : papier millimétré, identique dans les deux modes */
+  --color-paper: #efede7;
+  --color-navy: #232a4d;
+
+  --font-display: var(--font-poppins);
+  --font-mono: var(--font-jetbrains-mono);
+  --font-sans: var(--font-jetbrains-mono);
+
+  --animate-blink: blink 1.1s steps(1) infinite;
+  --animate-spin-slow: spin 14s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-in: fade-in 1s ease-out;
+  --animate-scroll-dot: scroll-dot 1.8s ease-in-out infinite;
+  /* Bouton WhatsApp du formulaire : les trois animations partagent le même rythme */
+  --animate-wa-ping: wa-ping 1.6s ease-out infinite;
+  --animate-wa-press: wa-press 1.6s ease-in-out infinite;
+  --animate-wa-tap: wa-tap 1.6s ease-in-out infinite;
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+  /* Halo qui s'élargit au moment où le curseur appuie */
+  @keyframes wa-ping {
+    0%,
+    35% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1.9);
+      opacity: 0;
+    }
+  }
+  @keyframes wa-press {
+    0%,
+    30%,
+    55%,
+    100% {
+      transform: scale(1);
+    }
+    40% {
+      transform: scale(0.88);
+    }
+  }
+  /* Main qui arrive en bas à droite, appuie, puis repart */
+  @keyframes wa-tap {
+    0%,
+    100% {
+      transform: translate(10px, 12px) rotate(-12deg);
+      opacity: 0.85;
+    }
+    30% {
+      transform: translate(0, 0) rotate(-12deg);
+      opacity: 1;
+    }
+    40% {
+      transform: translate(0, 2px) rotate(-12deg) scale(0.88);
+    }
+    55% {
+      transform: translate(0, 0) rotate(-12deg);
+    }
+  }
+  @keyframes scroll-dot {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    70% {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Grille fine sur tout le site, qui s'estompe vers le bas de l'écran */
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  z-index: -20;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse 120% 100% at 50% 0%, #000 45%, rgb(0 0 0 / 0.35) 100%);
+}
+
+/* Halo qui suit la souris (position mise à jour par MouseHalo) */
+.mouse-halo {
+  position: fixed;
+  inset: 0;
+  z-index: -10;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+  background: radial-gradient(
+    600px circle at var(--x, 50%) var(--y, 50%),
+    var(--halo-cyan),
+    var(--halo-violet) 40%,
+    transparent 70%
+  );
+}
+
+/* Grandes lettres en filigrane (composant Watermark) */
+.watermark {
+  z-index: -1;
+  pointer-events: none;
+  user-select: none;
+  font-family: var(--font-poppins);
+  font-weight: 800;
+  line-height: 0.8;
+  white-space: nowrap;
+  color: var(--fg);
+  opacity: 0.035;
+}
+
+/* Papier millimétré de la section Expérience */
+.paper-grid {
+  background-image:
+    linear-gradient(to right, rgb(35 42 77 / 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(35 42 77 / 0.08) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Le texte ne grossit pas tout seul quand on tourne le téléphone */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Filet de sécurité : jamais de défilement horizontal, quel que soit l'écran.
+   « clip » (et non « hidden ») garde l'en-tête collé en haut. */
+html,
+body {
+  overflow-x: clip;
+}
+
+/* Les mots très longs (adresses e-mail, liens) passent à la ligne au lieu de déborder */
+p,
+h1,
+h2,
+h3,
+dd,
+li {
+  overflow-wrap: break-word;
+}
+
+/* Très grands écrans : tout le site grandit légèrement */
+@media (min-width: 1920px) {
+  html {
+    font-size: 112.5%;
+  }
+}
+@media (min-width: 2560px) {
+  html {
+    font-size: 131.25%;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--accent-violet);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  /* Blocs à apparition (composant Reveal) : affichés directement */
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

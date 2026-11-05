@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "title": "Ezéchias — Freelance web & mobile developer",
+    "description": "Freelance web & mobile developer based in Benin. Showcase websites, online stores and mobile apps for small businesses, shop owners and entrepreneurs."
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "backToTop": "Back to top of page",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNav": "Main navigation",
+    "socials": "Social networks",
+    "home": "Ezéchias, back to home",
+    "newTab": "(opens in a new tab)"
+  },
+  "theme": {
+    "toDark": "Switch to dark mode",
+    "toLight": "Switch to light mode"
+  },
+  "language": {
+    "switch": "Passer en français",
+    "short": "FR"
+  },
+  "nav": {
+    "home": "home",
+    "about": "about",
+    "expertise": "expertise",
+    "projects": "projects",
+    "experience": "experience",
+    "contact": "contact"
+  },
+  "hero": {
+    "available": "Available for new projects",
+    "unavailable": "Fully booked for now",
+    "whatsapp": "Message me on WhatsApp",
+    "projects": "See my projects",
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "title": "I'm Ezéchias",
+    "text": "As a freelance developer, I turn my clients' ideas into fast, beautiful and easy-to-use <web>websites</web> and <mobile>mobile apps</mobile>. [Your background in one or two sentences.]",
+    "text2": "[What you love outside of code, what makes you unique.] Have a project in mind? <contact>Contact me</contact>.",
+    "cv": "Download my CV",
+    "photoAlt": "Photo of Ezéchias",
+    "disc": "AVAILABLE · OPEN TO WORK · "
+  },
+  "expertise": {
+    "title": "My expertise",
+    "web": {
+      "title": "Websites",
+      "subtitle": "Next.js, React",
+      "text": "Fast showcase sites and platforms, well ranked on Google and perfect on phones."
+    },
+    "mobile": {
+      "title": "Apps",
+      "subtitle": "Android, iOS",
+      "text": "Custom mobile apps built with [YOUR MOBILE STACK], for your customers or your team."
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "subtitle": "Mobile money",
+      "text": "Online stores with mobile money and card payments."
+    }
+  },
+  "projects": {
+    "title": "My projects",
+    "intro": "[One sentence about the kind of projects you build and for whom.] {projects} projects delivered, {clients} happy clients.",
+    "featured": "Featured project",
+    "viewProject": "View project",
+    "filterBy": "Filter by",
+    "all": "All",
+    "filtersLabel": "Filter projects by category",
+    "empty": "No project in this category yet.",
+    "screenshotOf": "Screenshot of {title}",
+    "categories": {
+      "web": "Websites",
+      "mobile": "Mobile",
+      "ecommerce": "E-commerce",
+      "demo": "Demos"
+    },
+    "categoryLabel": {
+      "web": "Website",
+      "mobile": "Mobile app",
+      "ecommerce": "E-commerce",
+      "demo": "Demo project"
+    }
+  },
+  "experience": {
+    "title": "My journey"
+  },
+  "contact": {
+    "watermark": "HELLO",
+    "title": "Got a project in mind?",
+    "titleAccent": "Let's talk.",
+    "subtitle": "Reply within 24 hours. First conversation is free, no commitment.",
+    "form": {
+      "name": "Your name",
+      "namePlaceholder": "Jane Doe",
+      "contact": "Email or WhatsApp",
+      "contactPlaceholder": "you@example.com",
+      "type": "Project type",
+      "types": {
+        "showcase": "Showcase website",
+        "store": "Online store",
+        "mobile": "Mobile app",
+        "other": "Other"
+      },
+      "message": "Your message",
+      "messagePlaceholder": "Describe your project in a few lines.",
+      "honeypot": "Leave this field empty",
+      "submit": "Send message",
+      "reachMe": "You can reach me on",
+      "tapHint": "Tap here to message me!",
+      "sending": "Sending…",
+      "success": "Thank you! Your message has been sent. I'll reply within 24 hours.",
+      "error": "Sending failed. Please try again or message me directly on WhatsApp.",
+      "errors": {
+        "name": "Please enter your name (at least 2 characters).",
+        "contact": "Please enter a valid email address or WhatsApp number.",
+        "type": "Please choose a project type.",
+        "message": "Please describe your project in a few words (at least 10 characters)."
+      }
+    },
+    "cards": {
+      "whatsapp": "WhatsApp — fastest",
+      "email": "Email",
+      "location": "Location"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "madeWith": "// made with Next.js & lots of coffee"
+  },
+  "caseStudy": {
+    "back": "Back to projects",
+    "client": "Client",
+    "year": "Year",
+    "category": "Category",
+    "technologies": "Technologies",
+    "problem": "The problem",
+    "solution": "The solution",
+    "result": "The result",
+    "gallery": "Screenshots",
+    "visit": "Visit the site / app",
+    "ctaTitle": "A similar project?",
+    "ctaText": "Let's talk on WhatsApp, the first conversation is free.",
+    "next": "Next project"
+  },
+  "notFound": {
+    "title": "// 404 — page not found",
+    "text": "This page doesn't exist or has been moved.",
+    "back": "Back to home"
+  }
+}
