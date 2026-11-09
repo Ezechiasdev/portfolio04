@@ -1,7 +1,9 @@
 import { BrainCircuit, Monitor, Smartphone, type LucideIcon } from "lucide-react";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
+import { skills } from "@content/skills";
+import { tr } from "@content/types";
 
 const cards: { key: "web" | "mobile" | "data"; Icon: LucideIcon; highlight: string }[] = [
   { key: "web", Icon: Monitor, highlight: "var(--accent-cyan)" },
@@ -12,6 +14,7 @@ const cards: { key: "web" | "mobile" | "data"; Icon: LucideIcon; highlight: stri
 export async function Expertise() {
   const t = await getTranslations("expertise");
   const tNav = await getTranslations("nav");
+  const locale = await getLocale();
 
   return (
     <section id="expertise" className="scroll-mt-16 py-20 sm:py-32">
@@ -56,6 +59,33 @@ export async function Expertise() {
             </Reveal>
           ))}
         </div>
+
+        {/* Compétences et langues (content/skills.ts) */}
+        <Reveal className="mt-14">
+          <h3 className="font-display text-xl font-bold sm:text-2xl">{t("skillsTitle")}</h3>
+          <dl className="mt-6 divide-y divide-line border-y border-line">
+            {skills.map((group) => (
+              <div
+                key={group.label.fr}
+                className="grid gap-3 py-4 sm:grid-cols-[13rem_1fr] sm:items-center sm:gap-6"
+              >
+                <dt className="font-display text-sm font-semibold">{tr(group.label, locale)}</dt>
+                <dd>
+                  <ul className="flex flex-wrap gap-2">
+                    {group.items.map((item) => (
+                      <li
+                        key={item.fr}
+                        className="rounded-full bg-cyan/10 px-3 py-1 text-xs font-medium text-cyan"
+                      >
+                        {tr(item, locale)}
+                      </li>
+                    ))}
+                  </ul>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </Reveal>
       </div>
     </section>
   );

@@ -65,8 +65,8 @@ export const experience: Experience[] = [
     },
     organization: { fr: "INSTI Lokossa · UNSTIM Abomey", en: "INSTI Lokossa · UNSTIM Abomey" },
     description: {
-      fr: "Génie électrique et informatique. Meilleures notes : stage et soutenance (16,40/20), intelligence artificielle (15,25/20).",
-      en: "Electrical and computer engineering. Top grades: internship and defence (16.40/20), artificial intelligence (15.25/20).",
+      fr: "Génie électrique et informatique. Meilleures notes : stage et soutenance (16,40/20), IA et applications (15,25/20). Big Data et Python, bases de données, sécurité des SI, Java, UML.",
+      en: "Electrical and computer engineering. Top grades: internship and defence (16.40/20), AI and applications (15.25/20). Big Data and Python, databases, IS security, Java, UML.",
     },
     kind: "education",
   },
@@ -92,6 +92,19 @@ export const experience: Experience[] = [
       en: "Electrical installation checks, meter installation and setup, analysis of power cuts.",
     },
     kind: "work",
+  },
+  {
+    period: { fr: "2021", en: "2021" },
+    role: { fr: "Baccalauréat série D", en: "Baccalaureate, science (série D)" },
+    organization: {
+      fr: "Complexe Scolaire Espérance 2000, Sèmè-Kpodji",
+      en: "Complexe Scolaire Espérance 2000, Sèmè-Kpodji",
+    },
+    description: {
+      fr: "Diplôme de fin d'études secondaires, série scientifique.",
+      en: "High school diploma, science track.",
+    },
+    kind: "education",
   },
   {
     period: { fr: "Et ensuite ?", en: "What's next?" },
