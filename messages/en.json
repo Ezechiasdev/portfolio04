@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Ezéchias — Freelance web & mobile developer",
-    "description": "Freelance web & mobile developer based in Benin. Showcase websites, online stores and mobile apps for small businesses, shop owners and entrepreneurs."
+    "description": "Ezéchias ATOMI, freelance web & mobile developer based in Abomey-Calavi (Benin), trained in artificial intelligence and data. Websites, mobile apps and digital tools for businesses and financial services."
   },
   "a11y": {
     "skipToContent": "Skip to content",
@@ -38,8 +38,8 @@
   },
   "about": {
     "title": "I'm Ezéchias",
-    "text": "As a freelance developer, I turn my clients' ideas into fast, beautiful and easy-to-use <web>websites</web> and <mobile>mobile apps</mobile>. [Your background in one or two sentences.]",
-    "text2": "[What you love outside of code, what makes you unique.] Have a project in mind? <contact>Contact me</contact>.",
+    "text": "As a freelance developer, I turn my clients' ideas into fast, beautiful and easy-to-use <web>websites</web> and <mobile>mobile apps</mobile>. I hold a bachelor's degree in computer science and telecommunications and have worked at the IT department of BANGE BANK Benin and at Benilab Services. Trained in machine learning, I am specialising in artificial intelligence and data science for financial services in Africa.",
+    "text2": "Outside of code, I enjoy hackathons, fintech and blockchain, research, reading and music. Have a project in mind? <contact>Contact me</contact>.",
     "cv": "Download my CV",
     "photoAlt": "Photo of Ezéchias",
     "disc": "AVAILABLE · OPEN TO WORK · "
@@ -48,23 +48,23 @@
     "title": "My expertise",
     "web": {
       "title": "Websites",
-      "subtitle": "Next.js, React",
-      "text": "Fast showcase sites and platforms, well ranked on Google and perfect on phones."
+      "subtitle": "Node.js, PHP, Next.js",
+      "text": "Showcase sites, platforms and internal tools, from requirements analysis to go-live, perfect on phones."
     },
     "mobile": {
       "title": "Apps",
       "subtitle": "Android, iOS",
-      "text": "Custom mobile apps built with [YOUR MOBILE STACK], for your customers or your team."
+      "text": "Custom mobile apps built with Expo (React Native), for your customers or your team."
     },
-    "ecommerce": {
-      "title": "E-commerce",
-      "subtitle": "Mobile money",
-      "text": "Online stores with mobile money and card payments."
+    "data": {
+      "title": "AI & data",
+      "subtitle": "Python, machine learning",
+      "text": "Data analysis, machine learning models in Python and SQL or NoSQL databases for smarter tools."
     }
   },
   "projects": {
     "title": "My projects",
-    "intro": "[One sentence about the kind of projects you build and for whom.] {projects} projects delivered, {clients} happy clients.",
+    "intro": "Web, mobile and fintech applications built for businesses and financial services in Africa.",
     "featured": "Featured project",
     "viewProject": "View project",
     "filterBy": "Filter by",

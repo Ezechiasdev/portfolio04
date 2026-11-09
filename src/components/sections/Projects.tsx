@@ -4,7 +4,6 @@ import { PhoneMockup } from "@/components/ui/PhoneMockup";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { getFeaturedProject, projectCategories, projects } from "@content/projects";
-import { site } from "@content/site";
 import { tr } from "@content/types";
 import { ProjectsGrid, type ProjectCardData } from "./ProjectsGrid";
 
@@ -32,7 +31,7 @@ export async function Projects() {
           <Reveal>
             <h2 className="font-display text-3xl font-bold min-[400px]:text-4xl sm:text-5xl">{t("title")}</h2>
             <p className="mt-6 max-w-md text-sm leading-7 font-bold">
-              {t("intro", { projects: site.stats.projects, clients: site.stats.clients })}
+              {t("intro")}
             </p>
           </Reveal>
 

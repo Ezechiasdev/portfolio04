@@ -2,7 +2,8 @@ import { useTranslations } from "next-intl";
 import { site, type SocialKey } from "@content/site";
 import { socialIcons, socialLabels } from "@/components/ui/SocialIcons";
 
-const keys = Object.keys(site.socials) as SocialKey[];
+// Les réseaux laissés vides ("") dans content/site.ts ne sont pas affichés
+const keys = (Object.keys(site.socials) as SocialKey[]).filter((key) => site.socials[key]);
 
 export function SocialLinks({ className = "" }: { className?: string }) {
   const t = useTranslations("a11y");

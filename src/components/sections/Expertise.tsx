@@ -1,12 +1,12 @@
-import { Monitor, ShoppingCart, Smartphone, type LucideIcon } from "lucide-react";
+import { BrainCircuit, Monitor, Smartphone, type LucideIcon } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
-const cards: { key: "web" | "mobile" | "ecommerce"; Icon: LucideIcon; highlight: string }[] = [
+const cards: { key: "web" | "mobile" | "data"; Icon: LucideIcon; highlight: string }[] = [
   { key: "web", Icon: Monitor, highlight: "var(--accent-cyan)" },
   { key: "mobile", Icon: Smartphone, highlight: "var(--accent-violet)" },
-  { key: "ecommerce", Icon: ShoppingCart, highlight: "var(--accent-orange)" },
+  { key: "data", Icon: BrainCircuit, highlight: "var(--accent-orange)" },
 ];
 
 export async function Expertise() {

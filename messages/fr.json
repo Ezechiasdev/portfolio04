@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Ezéchias — Développeur web & mobile freelance",
-    "description": "Développeur web & mobile freelance basé au Bénin. Sites vitrines, boutiques en ligne et applications mobiles pour PME, commerçants et porteurs de projets."
+    "description": "Ezéchias ATOMI, développeur web & mobile freelance basé à Abomey-Calavi (Bénin), formé à l'intelligence artificielle et aux données. Sites web, applications mobiles et outils numériques pour les entreprises et les services financiers."
   },
   "a11y": {
     "skipToContent": "Aller au contenu",
@@ -38,8 +38,8 @@
   },
   "about": {
     "title": "Je suis Ezéchias",
-    "text": "Développeur freelance, je transforme les idées de mes clients en <web>sites web</web> et en <mobile>applications mobiles</mobile> rapides, beaux et faciles à utiliser. [Ton parcours en une ou deux phrases.]",
-    "text2": "[Ce qui te passionne en dehors du code, ce qui te rend unique.] Un projet en tête ? <contact>Contactez-moi</contact>.",
+    "text": "Développeur freelance, je transforme les idées de mes clients en <web>sites web</web> et en <mobile>applications mobiles</mobile> rapides, beaux et faciles à utiliser. Diplômé d'une licence en informatique et télécommunications, j'ai travaillé à la DSI de BANGE BANK Bénin et chez Benilab Services. Formé au machine learning, je me spécialise en intelligence artificielle et en science des données, au service des services financiers en Afrique.",
+    "text2": "En dehors du code, j'aime les hackathons, la fintech et la blockchain, la recherche, la lecture et la musique. Un projet en tête ? <contact>Contactez-moi</contact>.",
     "cv": "Télécharger mon CV",
     "photoAlt": "Photo d'Ezéchias",
     "disc": "DISPONIBLE · OPEN TO WORK · "
@@ -48,23 +48,23 @@
     "title": "Mon expertise",
     "web": {
       "title": "Sites web",
-      "subtitle": "Next.js, React",
-      "text": "Sites vitrines et plateformes rapides, bien référencés sur Google et parfaits sur téléphone."
+      "subtitle": "Node.js, PHP, Next.js",
+      "text": "Sites vitrines, plateformes et outils internes, de l'analyse du besoin à la mise en service, parfaits sur téléphone."
     },
     "mobile": {
       "title": "Applications",
       "subtitle": "Android, iOS",
-      "text": "Applications mobiles sur mesure avec [TA TECHNO MOBILE], pour vos clients ou votre équipe."
+      "text": "Applications mobiles sur mesure avec Expo (React Native), pour vos clients ou votre équipe."
     },
-    "ecommerce": {
-      "title": "E-commerce",
-      "subtitle": "Mobile money",
-      "text": "Boutiques en ligne avec paiement par mobile money et carte bancaire."
+    "data": {
+      "title": "IA & données",
+      "subtitle": "Python, machine learning",
+      "text": "Analyse de données, modèles de machine learning en Python et bases SQL ou NoSQL pour des outils plus intelligents."
     }
   },
   "projects": {
     "title": "Mes projets",
-    "intro": "[Une phrase sur les types de projets que tu réalises et pour qui.] {projects} projets livrés, {clients} clients satisfaits.",
+    "intro": "Des applications web, mobiles et fintech pensées pour les entreprises et les services financiers en Afrique.",
     "featured": "Projet phare",
     "viewProject": "Voir le projet",
     "filterBy": "Filtrer par",

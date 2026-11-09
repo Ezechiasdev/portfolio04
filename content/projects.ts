@@ -33,123 +33,34 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "projet-1",
-    title: "[NOM DU PROJET 1]",
-    category: "web",
-    year: "[ANNÉE]",
-    client: { fr: "[NOM DU CLIENT]", en: "[CLIENT NAME]" },
+    slug: "afri-swift",
+    title: "AFRI-SWIFT",
+    category: "demo",
+    // Année du projet (laisser "" pour ne pas l'afficher)
+    year: "",
+    client: { fr: "Projet personnel", en: "Personal project" },
     short: {
-      fr: "[Le client, son besoin, ce que tu as livré et le résultat.]",
-      en: "[The client, their need, what you delivered and the result.]",
+      fr: "Preuve de concept de transferts d'argent entre comptes bancaires et mobile money en Afrique, via le Lightning Network (Bitcoin).",
+      en: "Proof of concept for cross-border transfers between bank accounts and mobile money in Africa, over the Lightning Network (Bitcoin).",
     },
-    technologies: ["Next.js", "Tailwind", "[TECHNO]"],
-    image: "/images/projets/projet-1.svg",
-    link: "",
-    featured: false,
-    caseStudy: {
-      problem: {
-        fr: "[Quel était le problème du client ? Ex. : aucun site, peu de demandes, image vieillissante.]",
-        en: "[What was the client's problem? E.g. no website, few enquiries, outdated image.]",
-      },
-      solution: {
-        fr: "[Ce que tu as conçu et développé, et pourquoi ces choix.]",
-        en: "[What you designed and built, and why.]",
-      },
-      result: {
-        fr: "[Le résultat concret : plus de demandes, ventes, temps gagné…]",
-        en: "[The concrete result: more enquiries, sales, time saved…]",
-      },
-      gallery: ["/images/projets/projet-1.svg"],
-    },
-  },
-  {
-    slug: "projet-2",
-    title: "[NOM DU PROJET 2]",
-    category: "mobile",
-    year: "[ANNÉE]",
-    client: { fr: "[NOM DU CLIENT]", en: "[CLIENT NAME]" },
-    short: {
-      fr: "[Le client, son besoin, ce que tu as livré et le résultat.]",
-      en: "[The client, their need, what you delivered and the result.]",
-    },
-    technologies: ["[TECHNO MOBILE]", "Firebase"],
-    image: "/images/projets/projet-2.svg",
+    technologies: ["Lightning Network", "LND", "Bitcoin", "Mobile money"],
+    image: "/images/projets/afri-swift.svg",
     link: "",
     featured: true,
     caseStudy: {
       problem: {
-        fr: "[Quel était le problème du client ?]",
-        en: "[What was the client's problem?]",
+        fr: "Envoyer de l'argent d'un pays africain à un autre reste lent et coûteux, surtout entre un compte bancaire et un portefeuille mobile money.",
+        en: "Sending money from one African country to another is still slow and expensive, especially between a bank account and a mobile money wallet.",
       },
       solution: {
-        fr: "[Ce que tu as conçu et développé, et pourquoi ces choix.]",
-        en: "[What you designed and built, and why.]",
+        fr: "Conception de l'architecture : un nœud Lightning (LND), un registre interne des comptes, la génération et le paiement automatisés des factures, le suivi et la réconciliation des transactions.",
+        en: "Architecture design: a Lightning node (LND), an internal account ledger, automated invoice generation and payment, transaction tracking and reconciliation.",
       },
       result: {
-        fr: "[Le résultat concret.]",
-        en: "[The concrete result.]",
+        fr: "Une preuve de concept qui vise des frais minimes et un règlement quasi instantané des transferts transfrontaliers.",
+        en: "A proof of concept aiming for minimal fees and near-instant settlement of cross-border transfers.",
       },
-      gallery: ["/images/projets/projet-2.svg"],
-    },
-  },
-  {
-    slug: "projet-3",
-    title: "[NOM DU PROJET 3]",
-    category: "ecommerce",
-    year: "[ANNÉE]",
-    client: { fr: "[NOM DU CLIENT]", en: "[CLIENT NAME]" },
-    short: {
-      fr: "[Boutique en ligne : produits, paiement mobile money, résultat.]",
-      en: "[Online store: products, mobile money payment, result.]",
-    },
-    technologies: ["React", "Mobile money", "[TECHNO]"],
-    image: "/images/projets/projet-3.svg",
-    link: "",
-    featured: false,
-    caseStudy: {
-      problem: {
-        fr: "[Quel était le problème du client ?]",
-        en: "[What was the client's problem?]",
-      },
-      solution: {
-        fr: "[Ce que tu as conçu et développé, et pourquoi ces choix.]",
-        en: "[What you designed and built, and why.]",
-      },
-      result: {
-        fr: "[Le résultat concret.]",
-        en: "[The concrete result.]",
-      },
-      gallery: ["/images/projets/projet-3.svg"],
-    },
-  },
-  {
-    slug: "projet-4",
-    title: "[NOM DU PROJET 4]",
-    category: "demo",
-    year: "[ANNÉE]",
-    client: { fr: "Projet personnel", en: "Personal project" },
-    short: {
-      fr: "[Projet de démonstration, présenté comme tel : ce qu'il montre de ton savoir-faire.]",
-      en: "[Demo project, presented as such: what it shows about your skills.]",
-    },
-    technologies: ["Next.js", "[TECHNO]"],
-    image: "/images/projets/projet-4.svg",
-    link: "",
-    featured: false,
-    caseStudy: {
-      problem: {
-        fr: "[Quelle idée ou quel besoin ce projet de démonstration illustre-t-il ?]",
-        en: "[What idea or need does this demo project illustrate?]",
-      },
-      solution: {
-        fr: "[Ce que tu as conçu et développé.]",
-        en: "[What you designed and built.]",
-      },
-      result: {
-        fr: "[Ce que tu as appris ou démontré.]",
-        en: "[What you learned or demonstrated.]",
-      },
-      gallery: ["/images/projets/projet-4.svg"],
+      gallery: ["/images/projets/afri-swift.svg"],
     },
   },
 ];

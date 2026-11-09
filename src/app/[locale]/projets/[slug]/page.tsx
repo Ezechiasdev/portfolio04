@@ -48,7 +48,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/pro
     { label: t("client"), value: tr(project.client, locale) },
     { label: t("year"), value: project.year },
     { label: t("category"), value: tProjects(`categoryLabel.${project.category}`) },
-  ];
+  ].filter((fact) => fact.value); // une année laissée vide ("") n'est pas affichée
 
   const story = [
     { title: t("problem"), text: tr(project.caseStudy.problem, locale) },

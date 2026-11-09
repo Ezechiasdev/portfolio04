@@ -8,7 +8,7 @@ export const site = {
   // Nom affiché en grand dans l'accueil et dans le logo
   name: "Ezéchias",
   // Nom complet (utilisé pour le référencement et le copyright)
-  fullName: "[TON NOM COMPLET]",
+  fullName: "Ezéchias Ayo Isègun ATOMI",
 
   title: {
     fr: "Développeur web & mobile freelance",
@@ -25,25 +25,26 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
 
   // Numéro WhatsApp au format international, ex. "+229 01 23 45 67 89"
-  whatsapp: "[TON NUMÉRO]",
+  whatsapp: "+229 01 68 20 64 45",
   // Message pré-rempli quand un client clique sur un bouton WhatsApp
   whatsappMessage: {
     fr: "Bonjour Ezéchias, j'ai vu votre portfolio et j'aimerais parler d'un projet.",
     en: "Hello Ezéchias, I saw your portfolio and would like to discuss a project.",
   } satisfies Localized,
 
-  email: "[TON E-MAIL]",
+  email: "ezechiasatomi04@gmail.com",
 
   location: {
-    fr: "Bénin · à distance partout",
-    en: "Benin · remote worldwide",
+    fr: "Abomey-Calavi, Bénin · à distance partout",
+    en: "Abomey-Calavi, Benin · remote worldwide",
   } satisfies Localized,
 
   socials: {
-    github: "https://github.com/[TON-PSEUDO]",
-    linkedin: "https://www.linkedin.com/in/[TON-PSEUDO]",
-    facebook: "https://www.facebook.com/[TON-PSEUDO]",
-    instagram: "https://www.instagram.com/[TON-PSEUDO]",
+    // Laisser "" pour masquer un réseau
+    github: "",
+    linkedin: "https://www.linkedin.com/in/ayois%C3%A9gun-atomi-672274328/",
+    facebook: "",
+    instagram: "",
   },
 
   // Mets ton CV dans public/cv.pdf (ou change ce chemin)
@@ -54,12 +55,6 @@ export const site = {
 
   // Affiché dans le badge de l'accueil et le disque tournant
   available: true,
-
-  // Chiffres affichés dans la section Projets
-  stats: {
-    projects: "[X]",
-    clients: "[X]",
-  },
 };
 
 export type SocialKey = keyof typeof site.socials;
